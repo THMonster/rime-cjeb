@@ -60,6 +60,7 @@ punctuator:
   full_shape:
     '.' : { commit: ． }
     ',' : { commit: ， }
+    ';' : { commit: ； }
     ':' : { commit: ： }
     '!' : { commit: ！ }
     '?' : { commit: ？ }
@@ -75,6 +76,7 @@ punctuator:
   half_shape:
     '.' : { commit: 。 }
     ',' : { commit: ， }
+    ';' : { commit: ； }
     ':' : { commit: ： }
     '!' : { commit: ！ }
     '?' : { commit: ？ }
