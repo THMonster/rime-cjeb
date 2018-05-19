@@ -39,7 +39,7 @@ engine:
 
 speller:
   alphabet: 'abcdefghijklmnopqrstuvwxyz;,./'
-  initials: 'abcdefghijklmnopqrstuvwxyz;,./'
+  initials: 'abcdefghijklmnopqrstuvwxyz'
   auto_select: true
   auto_select_pattern: '(^[uv].$)|(^[^i].{3}$)|[;,./]'
   max_code_length: 4
@@ -58,6 +58,8 @@ translator:
 
 punctuator:
   full_shape:
+    '.' : { commit: ． }
+    ',' : { commit: ， }
     ':' : { commit: ： }
     '!' : { commit: ！ }
     '?' : { commit: ？ }
@@ -71,6 +73,8 @@ punctuator:
     '(' : { commit: （ }
     ')' : { commit: ） }
   half_shape:
+    '.' : { commit: 。 }
+    ',' : { commit: ， }
     ':' : { commit: ： }
     '!' : { commit: ！ }
     '?' : { commit: ？ }
